@@ -1,0 +1,61 @@
+name: dismay_app
+description: Bamp.
+
+version: 2.0.13+14
+
+environment:
+  sdk: ">=2.5.0 <2.8.0"
+  flutter: 1.12.13+hotfix.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ARCHITECTURE
+  scoped_model: 1.0.1
+  bloc: 3.0.0
+  flutter_bloc: 3.2.0
+  get_it: 3.1.0
+
+  # STORAGE
+  shared_preferences: 0.5.3+4
+
+  # WIDGETS
+  flutter_inappwebview: ^2.1.0+1
+  flutter_iconpicker: 0.1.5
+  dots_indicator: 1.1.0
+  flutter_slidable: 0.5.4
+
+  # This webview broke the app
+  # webview_flutter: 0.3.19+4
+
+  # CRASHLITICS
+  sentry: 3.0.1
+
+  # UTILS
+  lint: 1.1.1
+  equatable: 1.1.0
+  validators: 2.0.0+1
+  dart_color_print:
+    git:
+      url: git://github.com/earyzhe/dart_color_print.git
+      ref: master
+
+dev_dependencies:
+  flutter_driver:
+    sdk: flutter
+  test: any #Leave as any and let flutter organize the other dependencies
+
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.7.2"
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+flutter:
+  uses-material-design: true
+  # assets:
+  #   - assets/
